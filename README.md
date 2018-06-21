@@ -10,6 +10,9 @@ itchatmp是一个开源的微信公众号、企业号接口，使用python调用
 
 与个人号接口[itchat][itchat]共享类似的操作方式，学习一次掌握两个工具。
 
+修改了 \itchatmp\components\register.py文件，在run函数中添加了一个url路由字符串，
+以支持自定义路由，而不是默认的 / 。这在使用nginx 反向代理中比较常用。
+
 ## 安装
 
 可以通过本命令安装itchatmp：
