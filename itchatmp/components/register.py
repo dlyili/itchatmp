@@ -247,14 +247,14 @@ def update_config(self, config=None, atStorage=None, userStorage=None,
     self.filterRequest = filterRequest or self.filterRequest
     self.threadPoolNumber = threadPoolNumber or self.threadPoolNumber
 
-def run(self, isWsgi=False, debug=True, port=80):
+def run(self, isWsgi=False, debug=True, port=80, url='/'):
     self.isWsgi = isWsgi
     self.debug = debug
     if debug:
         set_logging(loggingLevel=logging.DEBUG)
     MainHandler = construct_handler(self, isWsgi)
     app = tornado.web.Application(
-        [('/', MainHandler)], debug=debug)
+        [(url, MainHandler)], debug=debug)
     logger.info('itchatmp started!%s' % (
         ' press Ctrl+C to exit.' if debug else ''))
     if isWsgi:

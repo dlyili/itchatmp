@@ -1,6 +1,6 @@
 """ A wechat massive platfrom api project
 See:
-https://github.com/littlecodersh/itchatmp
+https://github.com/dlyili/itchatmp
 """
 
 from setuptools import setup, find_packages
@@ -21,10 +21,10 @@ setup(
     description='A complete wechat massive platform api',
     long_description=long_description,
 
-    url='https://github.com/littlecodersh/itchatmp',
+    url='https://github.com/dlyili/itchatmp',
 
-    author='LittleCoder',
-    author_email='i7meavnktqegm1b@qq.com',
+    author='Jiang jianjun',
+    author_email='jiangjianjun716@163.com',
 
     license='MIT',
 
