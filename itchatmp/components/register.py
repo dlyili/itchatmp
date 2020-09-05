@@ -13,7 +13,8 @@ from itchatmp.content import (NORMAL, COMPATIBLE, SAFE,
     TEXT, INCOME_MSG, OUTCOME_MSG)
 from itchatmp.views import (
     deconstruct_msg, construct_msg, reply_msg_format,
-    decrypt_msg, encrypt_msg, oauth)
+    decrypt_msg, encrypt_msg)
+from itchatmp.controllers.oauth import oauth
 from itchatmp.controllers.envtest import env_test
 from itchatmp.exceptions import ParameterError
 from itchatmp.log import set_logging
