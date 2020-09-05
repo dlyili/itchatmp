@@ -19,6 +19,7 @@ def run(self, isWsgi=False, debug=True, port=80, url='/'):
 可以通过本命令安装itchatmp：
 
 ```python
+pip install futures==3.1.1 (python3安装需要)
 pip install itchatmp
 ```
 
